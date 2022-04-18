@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace backend.Models
+namespace WebApplication1.Models
 {
     public class User
     {
@@ -9,6 +9,7 @@ namespace backend.Models
         public string Email { get; set; }
         [JsonIgnore]
         public string Password { get; set; }
-        //public List<Comment>? Comments { get; set; }
+        public List<Comment>? Comments { get; set; }
+
     }
 }

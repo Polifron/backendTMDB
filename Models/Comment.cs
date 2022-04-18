@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace backend.Models
+namespace WebApplication1.Models
 {
     public class Comment
     {
@@ -8,8 +8,7 @@ namespace backend.Models
         public string Message { get; set; }
         public int MovieId { get; set; }
         public int? ParentId { get; set; }
-        //[ForeignKey("User")]
-        //public int UserId { get; set; }
-        //public virtual User User { get; set; }
+        public int? UserId { get; set; }
+        public virtual User User { get; set; }
     }
 }
